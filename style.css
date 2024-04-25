@@ -1,5 +1,9 @@
 body {
-    font-family: sans-serif;
+    font-family: "Sintony", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    color: #eef2e2;
     margin: 0;
     padding: 20px;
     background: #eef2e2;
@@ -12,9 +16,10 @@ body {
 .tip-calculator-container {
     padding: 20px;
     margin: 0 auto;
-    width: 300px;
+    width: 500px;
     background: #247291;
     border-radius:30px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
 h1,p {
@@ -31,29 +36,22 @@ label {
     font-weight: bold;
 }
 
+#billTotal,
 #tipPercentage,
 #tipAmount,
 #totalBill {
-    background-color: #f1f1f1;
+    background-color: #eef2e2;
+    color: black;
+    font-size: 0.9em;
+    font-family: "Sintony", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-/* Style the tip range slider */
-#tip::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Removes default appearance */
-  height: 16px;
-  width: 16px;
-  border-radius: 50%; /* Creates a circular thumb */
-  background-color: #ccc; /* Set thumb color */
-  cursor: pointer; /* Indicates draggable element */
+#tip {
+  accent-color: #f8da5b;
 }
 
-#tip::-webkit-slider-track {
-  -webkit-appearance: none; /* Removes default appearance */
-  height: 5px; /* Set track height */
-  background-color: #ddd; /* Set track color */
-  border-radius: 5px; /* Matches thumb radius */
-}
-
-#tip::-webkit-slider-runnable-track {
-  background-color: lightblue; /* Set progress track color */
+#tipPercentage {
+    font-size: 1em;
 }
