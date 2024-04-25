@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tip-calculator-container">
+    <p>ITMD 441 - Lab3 - Yejin Park</p>
+    <h1>Tip Calculator</h1>
+    <form id="tip-calculator">
+        <label for="billTotal">Bill Total:</label>
+        <input type="text" id="billTotal" name="billTotal" placeholder="Enter bill total">
+        <br>
+        <label for="tip">Tip:</label>
+        <input type="range" id="tip" name="tip" min="0" max="100" value="0">
+        <br>
+        <label for="tipPercentage">Tip Percentage:</label>
+        <span id="tipPercentage">0</span>
+        <br>
+        <label for="tipAmount">Tip Amount:</label>
+        <input type="text" id="tipAmount" name="tipAmount" disabled>
+        <br>
+        <label for="totalBill">Total Bill with Tip:</label>
+        <input type="text" id="totalBill" name="totalBill" disabled>
+        <br>
+    </form>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
